@@ -17,18 +17,14 @@ This is a simple one screen weather app to save you a little time if you plan to
 ~~~~
 
 dependencies {
-
     compile fileTree(include: ['*.jar'], dir: 'libs')
 
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile "com.android.support:design:23.1.1"
-    compile "com.android.support:design:23.1.1"
-    compile "com.android.support:recyclerview-v7:23.1.1"
 
     //----- Rx
     compile "io.reactivex:rxandroid:1.1.0"
     compile "io.reactivex:rxjava:1.1.0"
-    compile 'com.jakewharton.rxbinding:rxbinding:0.3.0'
 
     //----- Retrofit
     compile "com.squareup.retrofit:retrofit:2.0.0-beta2"
@@ -45,7 +41,6 @@ dependencies {
     androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.1'
     androidTestCompile 'org.hamcrest:hamcrest-integration:1.3'
 }
-
 ~~~~
 
 #### Need more nice stuff ?
