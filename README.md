@@ -1,4 +1,4 @@
-Simple MVVP DataBinding with RxJava Weather App [level: Beginner]
+Weather App - MVVP DataBinding with RxJava [level: Beginner]
 ==========================
 
 This is a simple one screen weather app to save you a little time if you plan to work with data-bindings.
