@@ -14,7 +14,7 @@ public class WeatherPojo {
     private Coord coord;
     @SerializedName("weather")
     @Expose
-    private List<Weather> weather = new ArrayList<Weather>();
+    private List<Weather> weather = new ArrayList<>();
     @SerializedName("base")
     @Expose
     private String base;

@@ -13,14 +13,13 @@ import timber.log.Timber;
 public class MainActivity extends AppCompatActivity implements MainViewModel.DataListener {
 
     private MainViewModel mainViewModel;
-    private ActivityMainBinding binding;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         mainViewModel = new MainViewModel(this, this);
         binding.setViewModel(mainViewModel);
 

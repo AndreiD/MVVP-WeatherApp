@@ -1,7 +1,6 @@
 package com.androidadvance.mvvp_weatherapp.remote;
 
 import com.androidadvance.mvvp_weatherapp.model.ipgeolocation.IpGeolocation;
-import com.androidadvance.mvvp_weatherapp.model.weather.WeatherPojo;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.logging.HttpLoggingInterceptor;
 
@@ -9,7 +8,6 @@ import retrofit.GsonConverterFactory;
 import retrofit.Retrofit;
 import retrofit.RxJavaCallAdapterFactory;
 import retrofit.http.GET;
-import retrofit.http.Query;
 import rx.Observable;
 
 public interface IpGeoLocationAPI {

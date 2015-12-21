@@ -37,7 +37,6 @@ public class MainActivityTest {
     private static final int LAUNCH_TIMEOUT = 1000;
 
     private UiDevice mDevice;
-    private Context context;
 
     @Before
     public void startMainActivityFromHomeScreen() {
@@ -53,7 +52,7 @@ public class MainActivityTest {
         mDevice.wait(Until.hasObject(By.pkg(launcherPackage).depth(0)), LAUNCH_TIMEOUT);
 
         // Launch the blueprint app
-        context = InstrumentationRegistry.getContext();
+        Context context = InstrumentationRegistry.getContext();
         final Intent intent = context.getPackageManager()
                 .getLaunchIntentForPackage(BASIC_SAMPLE_PACKAGE);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);    // Clear out any previous instances
