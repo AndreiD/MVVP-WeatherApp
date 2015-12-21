@@ -1,9 +1,9 @@
 Simple MVVP DataBinding with RxJava Weather App [level: Beginner]
 ==========================
 
-This is a simple one screen weatherapp to save you a little time if you plan to work with data-bindings.
+This is a simple one screen weather app to save you a little time if you plan to work with data-bindings.
 
-![alt text](https://github.com/AndreiD/UltimateAndroidAppTemplate/blob/master/app/the_gif_1.gif "How the app looks 1")
+![alt text](https://raw.githubusercontent.com/AndreiD/MVVP-WeatherApp/master/screenshot.png "How the app looks 1")
 
 
 #### How to use it:
@@ -62,6 +62,10 @@ dependencies {
 - https://github.com/AndreiD/surveylib - A very good looking survey library
 - https://github.com/AndreiD/TSnackBar Snackbar from the top
 
+
+#### Thank you:
+
+- Icons by http://vclouds.deviantart.com/
 
 
 #### License

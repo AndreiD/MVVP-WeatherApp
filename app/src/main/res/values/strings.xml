@@ -15,4 +15,5 @@
     <string name="wind_suffix_metric">km/h</string>
     <string name="wind_suffix_imperial">mph</string>
     <string name="fab_refresh">Refresh</string>
+    <string name="attributions">Icons by http://vclouds.deviantart.com/</string>
 </resources>
