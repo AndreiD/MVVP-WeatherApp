@@ -3,9 +3,8 @@ Simple MVVP DataBinding with RxJava Weather App [level: Beginner]
 
 This is a simple one screen weather app to save you a little time if you plan to work with data-bindings.
 
-<img src="https://raw.githubusercontent.com/AndreiD/MVVP-WeatherApp/master/screenshot.png" alt="Drawing" style="width: 100px;"/>
-![drawing](drawing.png) ("How the app looks 1")
-{:.some-css-class style="width: 200px"}
+![alt text](https://raw.githubusercontent.com/AndreiD/MVVP-WeatherApp/master/screenshot.png =450x "How the app looks 1")
+
 
 #### How to use it:
 
