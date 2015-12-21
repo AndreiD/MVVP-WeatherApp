@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MVVP-WeatherApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="default_message">output...</string>
+    <string name="default_location">City</string>
+    <string name="default_city">City</string>
+    <string name="temp_current">0°</string>
+    <string name="temp_min_max">-1° 4°</string>
+    <string name="conditions">Conditions</string>
+    <string name="humidity">Humidity</string>
+    <string name="pressure">Pressure</string>
+    <string name="wind">Wind</string>
+    <string name="visibility">Visibility</string>
+    <string name="degrees_symbol">°</string>
+    <string name="wind_suffix_metric">km/h</string>
+    <string name="wind_suffix_imperial">mph</string>
+    <string name="fab_refresh">Refresh</string>
+</resources>

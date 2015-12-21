@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.androidadvance.mvvp_weatherapp.viewmodel.MainViewModel"/>
+    </data>
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context="com.androidadvance.deete.MainActivity">
+
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="?attr/actionBarSize"
+            android:scrollbars="none"
+            app:behavior_overlapTop="30dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:visibility="@{viewModel.viewsVisibility}"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textview_main_city"
+                    android:contentDescription="@string/default_city"
+                    android:text="@{viewModel.city}"
+                    android:textSize="40sp" tools:text="City"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical" android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@{viewModel.temp_current}" android:textSize="60sp" tools:text="15°"/>
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@{viewModel.temp_min_max}"
+                            android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="20sp" tools:text="5° 16°"/>
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp" android:layout_gravity="center_vertical" android:src="@{viewModel.weather_icon}"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@{viewModel.conditions}" android:textSize="30sp" tools:text="rainy with wind"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin" android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{viewModel.humidity}"
+                        tools:text="Humidity 153"/>
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{viewModel.pressure}"
+                        tools:text="Pressure 1353"/>
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{viewModel.wind}"
+                        tools:text="Wind 15m/s"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            app:visibility="@{viewModel.progressVisibility}"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:contentDescription="@string/fab_refresh"
+            android:layout_margin="@dimen/fab_margin"
+            android:onClick="@{viewModel.onClickFloatIcon}"
+            android:src="@drawable/ic_refresh"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+</layout>
+

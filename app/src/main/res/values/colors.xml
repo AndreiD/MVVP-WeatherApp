@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#1c6399</color>
+    <color name="colorPrimary">#55acee</color>
+    <color name="colorAccent">#55acee</color>
+    <color name="windowBackground">#F4F4F4</color>
+    <color name="colorControlNormal">#5bb0ef</color>
+    <color name="colorControlActivated">#5bb0ef</color>
+    <color name="navbar_color">@color/text_color</color>
+    <color name="text_color">#333</color>
+</resources>
